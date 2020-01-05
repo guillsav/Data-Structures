@@ -8,6 +8,9 @@ class ListNode:
         self.prev = prev
         self.next = next
 
+    def __repr__(self):
+        return f"{self.value}"
+
     """Wrap the given value in a ListNode and insert it
     after this node. Note that this node could already
     have a next node it is point to."""
@@ -50,6 +53,7 @@ class DoublyLinkedList:
 
     def __len__(self):
         return self.length
+    
 
     """Wraps the given value in a ListNode and inserts it 
     as the new head of the list. Don't forget to handle 
@@ -158,3 +162,5 @@ class DoublyLinkedList:
             max_val = max(max_val, current.value)
             current = current.next
         return max_val
+
+
