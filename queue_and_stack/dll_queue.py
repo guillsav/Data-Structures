@@ -15,7 +15,7 @@ class Queue:
         self.size += 1
 
     def dequeue(self):
-        if self.len() == 0:
+        if self.len() is 0:
             return
         self.size -= 1
         return self.storage.remove_from_tail()
