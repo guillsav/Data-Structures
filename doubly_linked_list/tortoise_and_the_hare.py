@@ -1,11 +1,10 @@
+from doubly_linked_list import DoublyLinkedList
+
 """ 
 Given a linkedlist find the middle node using one loop pass
 Input: 0->1->2->3->4->5->6->7->8->9->10->None
 Ouput: 6
 """
-
-from doubly_linked_list import DoublyLinkedList
-
 
 def tortoise_and_the_hare(list: DoublyLinkedList) -> int:
     # Define 2 pointers pointing at the head of the list.
