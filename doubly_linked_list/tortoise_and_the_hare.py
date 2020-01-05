@@ -6,19 +6,6 @@ Ouput: 6
 
 from doubly_linked_list import DoublyLinkedList
 
-# Create the linkedlist.
-my_list = DoublyLinkedList()
-my_list.add_to_tail(0)
-my_list.add_to_tail(1)
-my_list.add_to_tail(2)
-my_list.add_to_tail(3)
-my_list.add_to_tail(4)
-my_list.add_to_tail(5)
-my_list.add_to_tail(6)
-my_list.add_to_tail(7)
-my_list.add_to_tail(8)
-my_list.add_to_tail(9)
-my_list.add_to_tail(10)
 
 def tortoise_and_the_hare(list: DoublyLinkedList) -> int:
     # Define 2 pointers pointing at the head of the list.
@@ -38,6 +25,21 @@ def tortoise_and_the_hare(list: DoublyLinkedList) -> int:
 
     # if the fast_node is None return the slow_node.
     return slow_node
+
+
+# Create the linkedlist.
+my_list = DoublyLinkedList()
+my_list.add_to_tail(0)
+my_list.add_to_tail(1)
+my_list.add_to_tail(2)
+my_list.add_to_tail(3)
+my_list.add_to_tail(4)
+my_list.add_to_tail(5)
+my_list.add_to_tail(6)
+my_list.add_to_tail(7)
+my_list.add_to_tail(8)
+my_list.add_to_tail(9)
+my_list.add_to_tail(10)
 
 print(tortoise_and_the_hare(my_list))
 
