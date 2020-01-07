@@ -19,10 +19,10 @@ def tortoise_and_the_hare(list: DoublyLinkedList) -> int:
         # If the fast_node is None break out of the while loop.
         if not fast_node.next:
             break
-        # else iterate through the list 2 nodes at the time.
+        # Else iterate through the list 2 nodes at the time.
         fast_node = fast_node.next.next
 
-    # if the fast_node is None return the slow_node.
+    # If the fast_node is None return the slow_node.
     return slow_node
 
 
